@@ -28,22 +28,21 @@ jobs:
           sudo apt-get install coreutils quilt parted qemu-user-static debootstrap zerofree zip
           sudo apt-get install dosfstools bsdtar libcap2-bin grep rsync xz-utils file git curl bc
 
+      # Checkout the latest pi-gen repo code
+      - name: Checkout the latest pi-gen repo code
+        run: |
+          git clone https://github.com/RPi-Distro/pi-gen.git
+          pushd pi-gen
+          ls -al          
 
       - name: Setup Pi-Gen Environment
         run: |
           echo Setup Pi-Gen Environment
           echo "IMG_NAME=Ambianic_Edge_rpi_image" > config
 
-      # Checkout the latest pi-gen repo code
-      - name: Checkout the latest pi-gen repo code
-        run: git clone https://github.com/RPi-Distro/pi-gen.git
-
       # Run pi-gen script
       - name: Run pi-gen script
         run: |
-          ls -al
-          pushd pi-gen
-          ls -al
           sudo ./build.sh
 
       # Runs a set of commands using the runners shell
