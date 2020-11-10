@@ -37,6 +37,11 @@ jobs:
           ls -al          
           popd
 
+
+      # Copy ambianic image build config to pi-gen working dir
+      - name: Copy ambianic image build config to pi-gen working dir
+        run: cp ./config ./pi-gen/config
+
       # Run pi-gen script
       - name: Run pi-gen script
         run: |
