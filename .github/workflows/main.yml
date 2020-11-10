@@ -32,14 +32,16 @@ jobs:
       - name: Checkout the latest pi-gen repo code
         run: |
           git clone https://github.com/RPi-Distro/pi-gen.git
-          pushd pi-gen
+          cd pi-gen
           pwd
           ls -al          
 
       - name: Setup Pi-Gen Environment
         run: |
           echo Setup Pi-Gen Environment
-          echo "IMG_NAME=Ambianic_Edge_rpi_image" > config
+          echo "IMG_NAME=Ambianic_Edge_rpi_image" >> config
+          # build only raspberry pi os lite image stages without desktop stages
+          echo "STAGE_LIST='stage0 stage1 stage2'" >> config
 
       # Run pi-gen script
       - name: Run pi-gen script
