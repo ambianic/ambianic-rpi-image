@@ -50,3 +50,4 @@ dosfstools bsdtar libcap2-bin grep rsync xz-utils file git curl bc
         run: |
           echo Finishing pi-gen script...
           echo Ambianic Edge rpi image build finished successfully!
+  
