@@ -22,16 +22,35 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Setup Pi-Gen Environment
+      - name: Install pi-gen required dependencies
+        run: |
+          sudo apt-get update --fix-missing
+          sudo apt-get install coreutils quilt parted qemu-user-static debootstrap zerofree zip
+          sudo apt-get install dosfstools bsdtar libcap2-bin grep rsync xz-utils file git curl bc
 
       # Checkout the latest pi-gen repo code
-      - name: Run a one-line script
-        run: git clone https://github.com/ambianic/ambianic-rpi-image.git
+      - name: Checkout the latest pi-gen repo code
+        run: |
+          git clone https://github.com/RPi-Distro/pi-gen.git
+          pushd pi-gen
+          pwd
+          ls -al          
+          popd
+
+      # Run pi-gen script
+      - name: Run pi-gen script
+        run: |
+          pwd
+          ls -al          
+          pushd pi-gen
+          pwd
+          ls -al
+          sudo ./build.sh
+          popd
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
           echo Finishing pi-gen script...
           echo Ambianic Edge rpi image build finished successfully!
+  
