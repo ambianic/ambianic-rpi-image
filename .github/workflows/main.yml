@@ -43,21 +43,22 @@ jobs:
           pwd
           ls -al
           pushd pi-gen
-          cat > config <<EOL
-          export IMG_NAME=ambianic_edge_rpi
-          export RELEASE=buster
-          export DEPLOY_ZIP=1
-          export LOCALE_DEFAULT=en_US.UTF-8
-          export TARGET_HOSTNAME=ambianic-edge
-          export KEYBOARD_KEYMAP=us
-          export KEYBOARD_LAYOUT="English (US)"
-          export TIMEZONE_DEFAULT=America/Chicago          
-          export FIRST_USER_NAME=ambianic-edge
-          export FIRST_USER_PASS="ChangeMeOnFirstLogin"
+          echo <<<  EOL
+          IMG_NAME=ambianic_edge_rpi
+          RELEASE=buster
+          DEPLOY_ZIP=1
+          LOCALE_DEFAULT=en_US.UTF-8
+          TARGET_HOSTNAME=ambianic-edge
+          KEYBOARD_KEYMAP=us
+          KEYBOARD_LAYOUT="English (US)"
+          TIMEZONE_DEFAULT=America/Chicago          
+          FIRST_USER_NAME=ambianic-edge
+          FIRST_USER_PASS="ChangeMeOnFirstLogin"
           # build only raspberry pi os lite image stages without desktop stages
-          export STAGE_LIST="stage0 stage1 stage2"
-          export ENABLE_SSH=1
-          EOL          
+          STAGE_LIST="stage0 stage1 stage2"
+          ENABLE_SSH=1
+          EOL >> config
+          cat config         
           popd           
 
       # Run pi-gen script
