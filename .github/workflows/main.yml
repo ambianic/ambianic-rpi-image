@@ -24,8 +24,8 @@ jobs:
 
       - name: Install pi-gen required dependencies
         run: |
-          apt-get install coreutils quilt parted qemu-user-static debootstrap zerofree zip
-          apt-get install dosfstools bsdtar libcap2-bin grep rsync xz-utils file git curl bc
+          sudo apt-get install coreutils quilt parted qemu-user-static debootstrap zerofree zip
+          sudo apt-get install dosfstools bsdtar libcap2-bin grep rsync xz-utils file git curl bc
 
 
       - name: Setup Pi-Gen Environment
