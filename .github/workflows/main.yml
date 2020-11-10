@@ -36,6 +36,7 @@ jobs:
         run: |
           ls -al
           cd pi-gen
+          ls -al
           ./build-docker.sh
 
       # Runs a set of commands using the runners shell
