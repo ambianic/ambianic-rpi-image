@@ -24,7 +24,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: Setup Pi-Gen Environment
+        run:  echo Setup Pi-Gen Environment
 
       # Checkout the latest pi-gen repo code
       - name: Run a one-line script
