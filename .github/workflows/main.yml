@@ -22,6 +22,12 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
+      - name: Install pi-gen required dependencies
+        run: |
+          apt-get install coreutils quilt parted qemu-user-static debootstrap zerofree zip \
+dosfstools bsdtar libcap2-bin grep rsync xz-utils file git curl bc
+
+
       - name: Setup Pi-Gen Environment
         run: |
           echo Setup Pi-Gen Environment
@@ -37,7 +43,7 @@ jobs:
           ls -al
           cd pi-gen
           ls -al
-          ./build-docker.sh
+          ./build.sh
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
