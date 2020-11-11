@@ -45,8 +45,8 @@ jobs:
       # Copy WiFi Connect stage script to pi-gen working dir
       - name: Copy WiFi Connect stage script to pi-gen working dir
         run: |
-          find . -name "*.sh" -exec chmod +x {} \;
-          cp -R ./pigen-stage-wifi ./pi-gen/
+          find ./pi-gen-stage-ambianic -name "*.sh" -exec chmod +x {} \;
+          cp -R ./pi-gen-stage-ambianic ./pi-gen/
           ls -al ./pi-gen
 
       # Run pi-gen script
