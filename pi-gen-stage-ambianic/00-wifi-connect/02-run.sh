@@ -4,4 +4,4 @@
 # Install set WiFi Connect logo
 #
 
-install -m 644 files/logo.svg "${ROOTFS_DIR}/usr/local/share/wifi-connect/ui/img/logo.svg"
+install -m 644 files/ambianic-logo.svg "${ROOTFS_DIR}/usr/local/share/wifi-connect/ui/img/logo.svg"
