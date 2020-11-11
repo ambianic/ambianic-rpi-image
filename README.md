@@ -7,3 +7,7 @@ A new Ambianic Edge rpi image is released about once a year to keep up with unde
 The Ambianic Edge rpi image **is not** updated each time a new version of the Ambianic Edge software is released. Instead the rpi image uses docker to run the ambianic-edge application software and it automatically updates the docker images using docker watchtower when they are released. This greatly reduces the need for manual maintenance of Ambianic Edge devices.
 
 The targeted lifespan of an Ambianic Edge image is 4-5 years. Once an Ambianic Edge device is up and running, it should not require manual intervention for software updates throughout its target lifespan of 4-5 years. 
+
+# Project Status
+
+Just getting started.
