@@ -10,5 +10,5 @@ TIMEZONE_DEFAULT=America/Chicago
 FIRST_USER_NAME=ambianic-edge
 FIRST_USER_PASS="ChangeMeOnFirstLogin"
 # build only raspberry pi os lite image stages without desktop stages
-STAGE_LIST="stage0 stage1 stage2"
+STAGE_LIST="stage0 stage1 stage2 pigen-stage-wifi"
 ENABLE_SSH=1
