@@ -11,3 +11,13 @@ The targeted lifespan of an Ambianic Edge image is 4-5 years. Once an Ambianic E
 # Project Status
 
 Just getting started.
+
+TODO:
+- [x] Create pi-gen script for RPI OS Lite image
+- [ ] Add custom pi-gen stage with Wifi connect install
+- [ ] Add custom pi-gen stage with Docker & Docker compose install
+- [ ] Add custom pi-gen stage with watchtower docker image install
+- [ ] Add custom pi-gen stage with ambianic-edge docker image install
+- [ ] Push rpi image release on github
+- [ ] Schedule annual rpi image release automation
+- [ ] Document image install process on a new rpi system
