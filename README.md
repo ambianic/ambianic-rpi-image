@@ -14,10 +14,10 @@ Just getting started.
 
 Roadmap:
 - [x] Create pi-gen script for RPI OS Lite image
-- [ ] Add custom pi-gen stage with Wifi connect install
-- [ ] Add custom pi-gen stage with Docker & Docker compose install
-- [ ] Add custom pi-gen stage with watchtower docker image install
-- [ ] Add custom pi-gen stage with ambianic-edge docker image install
+- [ ] Add custom pi-gen stage with [Wifi Connect](https://github.com/balena-io/wifi-connect#installation) install
+- [ ] Add custom pi-gen stage with Docker & Docker Compose install
+- [ ] Add custom pi-gen stage with [watchtower](https://github.com/containrrr/watchtower) docker image install
+- [ ] Add custom pi-gen stage with [ambianic-edge](https://docs.ambianic.ai/users/quickstart/) docker image install
 - [ ] Push rpi image release on github
 - [ ] Schedule annual rpi image release automation
 - [ ] Document image install process on a new rpi system
