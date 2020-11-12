@@ -1,3 +1,5 @@
+![CI build](https://github.com/ambianic/ambianic-rpi-image/workflows/CI%20build/badge.svg?branch=main)
+
 # Raspberry Pi Image for Ambianic Edge devices
 
 This project is responsible for creating binary image files for Ambianic Edge devices running on Raspberry Pi. The released image files are ready to be flashed on to an SD card and plugged into an rpi. When the raspberry pi boots for the first time with the new image on its SD Card, it runs a WiFi captive portal that allows the user to connect to it and setup WiFi access for the rpi. Once the rpi connects to the internet it is ready to be accessed and managed by the Ambianic UI PWA.
