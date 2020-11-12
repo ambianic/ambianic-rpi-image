@@ -9,7 +9,8 @@ install -m 644 files/wifi-connect-startup "${ROOTFS_DIR}/usr/local/sbin/"
 
 # get latest wifi-connect raspbian-install.sh
 pushd files
-curl -L https://github.com/balena-io/wifi-connect/raw/master/scripts/raspbian-install.sh
+curl -O -L https://github.com/balena-io/wifi-connect/raw/master/scripts/raspbian-install.sh
+chmod +x raspbian-install.sh
 popd
 
 install -m 644 files/raspbian-install.sh "${ROOTFS_DIR}/"
