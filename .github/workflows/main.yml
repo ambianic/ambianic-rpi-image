@@ -77,13 +77,13 @@ jobs:
         run: |
           ls -al ./pi-gen/deploy
           # check if the expected image files are there
-          test -f ./pi-gen/deploy/*ambianic_edge_rpi.zip
+          test -f ./pi-gen/deploy/*ambianic_edge-rpi.zip
 
       - name: Calculate Checksum
         id: get_sha256_checksum
         run: |
-          export IMAGE_SHA256_CHECKSUM=$(shasum -a 256 deploy/image_ambianic_edge_rpi.zip | awk '{print $1}')
-          echo "$IMAGE_SHA256_CHECKSUM deploy/image_ambianic_edge_rpi.zip"
+          export IMAGE_SHA256_CHECKSUM=$(shasum -a 256 deploy/image_ambianic_edge-rpi.zip | awk '{print $1}')
+          echo "$IMAGE_SHA256_CHECKSUM deploy/image_ambianic_edge-rpi.zip"
           echo ::set-output name=IMAGE_SHA256_CHECKSUM::${IMAGE_SHA256_CHECKSUM}
 
       - name: Create Release
@@ -114,7 +114,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: deploy/image_ambianic_edge_rpi.zip
+          asset_path: deploy/image_ambianic_edge-rpi.zip
           asset_name: ambianic_edge_rpi-${{ steps.get_version.outputs.VERSION }}.zip
           asset_content_type: application/zip
 
