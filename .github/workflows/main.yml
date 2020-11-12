@@ -77,7 +77,7 @@ jobs:
         run: |
           ls -al ./pi-gen/deploy
           # check if the expected image files are there
-          test -f ./pi-gen/deploy*ambianic_edge_rpi.zip
+          test -f ./pi-gen/deploy/*ambianic_edge_rpi.zip
 
       - name: Calculate Checksum
         id: get_sha256_checksum
