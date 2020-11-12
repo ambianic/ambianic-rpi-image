@@ -1,5 +1,7 @@
 # pi-gen config file for Ambinic Edge image build
-IMG_NAME=ambianic_edge_rpi
+IMG_DATE="ambianic_edge"
+IMG_NAME="rpi"
+STAGE_LIST="stage0 stage1 stage2 stage3_homebridge"
 RELEASE=buster
 DEPLOY_ZIP=1
 LOCALE_DEFAULT=en_US.UTF-8
