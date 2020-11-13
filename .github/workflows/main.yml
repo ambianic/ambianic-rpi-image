@@ -18,10 +18,6 @@ jobs:
     runs-on: ubuntu-latest
     # Skip build if the commit message includes the string '[skip ci]'
     if: "! contains(github.event.head_commit.message, '[skip ci]')"
-    env:
-      # PUSH_PACKAGES flags whether to trigger a release for this build
-      # a release is triggered when there is a direct commit or PR merge on the master branch
-      PUSH_PACKAGES: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
@@ -97,7 +93,8 @@ jobs:
     name: Release a new Ambianic Edge RPI image on master push event
     needs: build
     runs-on: ubuntu-latest
-    if: ${{ env.PUSH_PACKAGES }}
+    # trigger a release only when there is a direct commit or PR merge on the master branch
+    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
     steps:
       - name: Download deploy artifacts from build job
         uses: actions/download-artifact@v2
