@@ -61,7 +61,7 @@ jobs:
       # Mark stage2 image to be skipped for faster build
       - name: Skip stage2 image - Standard Raspbian OS Lite
         run: |
-          touch ./pi-gen/stage4/SKIP_IMAGES
+          touch ./pi-gen/stage2/SKIP_IMAGES
 
       # Run pi-gen image build script
       - name: Run pi-gen script
