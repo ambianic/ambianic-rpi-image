@@ -14,7 +14,7 @@ on:
 jobs:
   # Build binary images
   build:
-    name: Build and test a new Ambianic Edge RPI image
+    name: Build and test
     runs-on: ubuntu-latest
     # Skip build if the commit message includes the string '[skip ci]'
     if: "! contains(github.event.head_commit.message, '[skip ci]')"
@@ -76,12 +76,6 @@ jobs:
           # check if the expected image files are there
           test -f ./pi-gen/deploy/*ambianic_edge-rpi.zip
 
-      - name: Calculate Checksum
-        id: get_sha256_checksum
-        run: |
-          export IMAGE_SHA256_CHECKSUM=$(shasum -a 256 deploy/image_ambianic_edge-rpi.zip | awk '{print $1}')
-          echo "$IMAGE_SHA256_CHECKSUM deploy/image_ambianic_edge-rpi.zip"
-          echo ::set-output name=IMAGE_SHA256_CHECKSUM::${IMAGE_SHA256_CHECKSUM}
       - name: Upload artifacts for release job
         uses: actions/upload-artifact@v2
         with:
@@ -89,8 +83,9 @@ jobs:
           path: |
             ./pi-gen/deploy
 
+  # Release and publish image
   release:
-    name: Release a new Ambianic Edge RPI image on master push event
+    name: Release a new image
     needs: build
     runs-on: ubuntu-latest
     # trigger a release only when there is a direct commit or PR merge on the master branch
@@ -104,37 +99,22 @@ jobs:
         run: |
           pwd
           ls -al
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
+      - name: Checkout
+        # checkout repo to access custom semantic release scripts
+        uses: actions/checkout@v2
+      - name: Semantic Release
+        id: semrel
+        uses: cycjimmy/semantic-release-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ github.ref }}
-          release_name: ${{ github.ref }}
-          body: |
-            Click the link below to start your download:
-            <span align="center">
-            ### [ambianic_edge_rpi-${{ steps.get_version.outputs.VERSION }}.zip](https://github.com/ambianic/ambianic-rpi-image/releases/download/${{ steps.get_version.outputs.VERSION }}/ambianic_edge_rpi-${{ steps.get_version.outputs.VERSION }}.zip)
-            <sup>[Quick Start Guide](https://docs.ambianic.ai/users/quickstart/)</sup>
-            </span>
-            ---
-            * **SHA-256:** ${{ steps.get_sha256_checksum.outputs.IMAGE_SHA256_CHECKSUM }}
-            * **Base Image:**
-            * **Kernel version:**
-          draft: false
-          prerelease: true
-      - name: Upload Image
-        id: upload-release-asset 
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: image_ambianic_edge-rpi.zip
-          asset_name: ambianic_edge_rpi-${{ steps.get_version.outputs.VERSION }}.zip
-          asset_content_type: application/zip
-
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Log new release info
+        if: steps.semrel.outputs.new_release_published == 'true'
+        run: |
+          echo ${{ steps.semrel.outputs.new_release_version }}
+          echo ${{ steps.semrel.outputs.new_release_major_version }}
+          echo ${{ steps.semrel.outputs.new_release_minor_version }}
+          echo ${{ steps.semrel.outputs.new_release_patch_version }}
       - name: Finalizing run
         run: |
           echo Finishing pi-gen script...
