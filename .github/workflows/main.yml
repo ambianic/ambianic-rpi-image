@@ -94,7 +94,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     # trigger a release only when there is a direct commit or PR merge on the master branch
-    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
+    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
     steps:
       - name: Download deploy artifacts from build job
         uses: actions/download-artifact@v2
