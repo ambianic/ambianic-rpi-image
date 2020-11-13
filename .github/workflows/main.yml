@@ -14,6 +14,7 @@ on:
 jobs:
   # Build binary images
   build:
+    name: Build and test a new Ambianic Edge RPI image
     runs-on: ubuntu-latest
     # Skip build if the commit message includes the string '[skip ci]'
     if: "! contains(github.event.head_commit.message, '[skip ci]')"
@@ -85,9 +86,24 @@ jobs:
           export IMAGE_SHA256_CHECKSUM=$(shasum -a 256 deploy/image_ambianic_edge-rpi.zip | awk '{print $1}')
           echo "$IMAGE_SHA256_CHECKSUM deploy/image_ambianic_edge-rpi.zip"
           echo ::set-output name=IMAGE_SHA256_CHECKSUM::${IMAGE_SHA256_CHECKSUM}
+      - name: Upload artifacts for release job
+        uses: actions/upload-artifact@v2
+        with:
+          name: deploy
+          path: |
+            deploy
 
+  release:
+    name: Release a new Ambianic Edge RPI image on master push event
+    needs: build
+    runs-on: ubuntu-latest
+    if: ${{ env.PUSH_PACKAGES }}
+    steps:
+      - name: Download deploy artifacts from build job
+        uses: actions/download-artifact@v2
+        with:
+          name: deploy
       - name: Create Release
-        if: ${{ env.PUSH_PACKAGES }}
         id: create_release
         uses: actions/create-release@v1
         env:
