@@ -87,7 +87,7 @@ jobs:
         with:
           name: deploy
           path: |
-            deploy
+            ./pi-gen/deploy
 
   release:
     name: Release a new Ambianic Edge RPI image on master push event
@@ -127,7 +127,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: deploy/image_ambianic_edge-rpi.zip
+          asset_path: ./pi-gen/deploy/image_ambianic_edge-rpi.zip
           asset_name: ambianic_edge_rpi-${{ steps.get_version.outputs.VERSION }}.zip
           asset_content_type: application/zip
 
