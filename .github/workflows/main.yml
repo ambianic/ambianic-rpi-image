@@ -91,10 +91,10 @@ jobs:
     # trigger a release only when there is a direct commit or PR merge on the master branch
     if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
     steps:
-      - name: Download deploy artifacts from build job
-        uses: actions/download-artifact@v2
-        with:
-          name: deploy
+#      - name: Download deploy artifacts from build job
+#        uses: actions/download-artifact@v2
+#        with:
+#          name: deploy
       - name: List deployment artifacts
         run: |
           pwd
