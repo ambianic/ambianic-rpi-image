@@ -86,7 +86,7 @@ jobs:
   # Release and publish image
   release:
     name: Release a new image
-    needs: build
+#    needs: build
     runs-on: ubuntu-latest
     # trigger a release only when there is a direct commit or PR merge on the master branch
     if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
@@ -105,6 +105,11 @@ jobs:
       - name: Semantic Release
         id: semrel
         uses: cycjimmy/semantic-release-action@v2
+        with:
+          # You can specify specifying version range for the extra plugins if you prefer.
+          extra_plugins: |
+            @semantic-release/changelog
+            @semantic-release/git        
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
