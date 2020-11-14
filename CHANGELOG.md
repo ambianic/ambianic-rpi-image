@@ -1,5 +1,15 @@
 # Semantic Versioning Changelog
 
+## [1.0.1](https://github.com/ambianic/ambianic-rpi-image/compare/v1.0.0...v1.0.1) (2020-11-14)
+
+
+### Bug Fixes
+
+* ready for initial flash test ([2df1a33](https://github.com/ambianic/ambianic-rpi-image/commit/2df1a33c0805288b0aaa7b27e4546ef325f73e35))
+* release artifact name ([5691d7b](https://github.com/ambianic/ambianic-rpi-image/commit/5691d7b4308097ba5e93dc6e383b0d212d78a522))
+* remove redundant stage line ([2a16456](https://github.com/ambianic/ambianic-rpi-image/commit/2a164565dff2604b6382402f198a0b9d793f118a))
+* wifi captive portal name ([135d0b4](https://github.com/ambianic/ambianic-rpi-image/commit/135d0b4adfa8d7561da30828fcc92d4c15761254))
+
 # 1.0.0 (2020-11-14)
 
 
