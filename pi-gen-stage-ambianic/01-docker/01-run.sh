@@ -5,7 +5,7 @@
 #
 
 INSTALLDIR=/opt/ambianic
-BRANCH=main
+BRANCH=master
 TMPDIR=$(dirname $(mktemp tmp.XXXXXXXXXX -ut))
 
 sudo true
