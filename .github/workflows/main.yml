@@ -91,17 +91,18 @@ jobs:
     # trigger a release only when there is a direct commit or PR merge on the master branch
     if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
     steps:
+      - name: Checkout
+        # checkout repo to access custom semantic release scripts
+        uses: actions/checkout@v2
       - name: Download deploy artifacts from build job
         uses: actions/download-artifact@v2
         with:
           name: deploy
-      - name: List deployment artifacts
+          path: ./ambianic-rpi-image/
+      - name: List checkout and deployment artifacts
         run: |
           pwd
-          ls -al
-      - name: Checkout
-        # checkout repo to access custom semantic release scripts
-        uses: actions/checkout@v2
+          ls -alR
       - name: Semantic Release
         id: semrel
         uses: cycjimmy/semantic-release-action@v2
