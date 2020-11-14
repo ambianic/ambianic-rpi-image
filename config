@@ -4,7 +4,6 @@
 # with part of the image name, which is a workaround but it gets the job done.
 IMG_DATE="ambianic_edge"
 IMG_NAME="rpi"
-STAGE_LIST="stage0 stage1 stage2 stage3_homebridge"
 RELEASE=buster
 DEPLOY_ZIP=1
 LOCALE_DEFAULT=en_US.UTF-8
