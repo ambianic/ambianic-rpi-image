@@ -1,5 +1,18 @@
 # Semantic Versioning Changelog
 
+# [1.1.0](https://github.com/ambianic/ambianic-rpi-image/compare/v1.0.3...v1.1.0) (2020-11-14)
+
+
+### Bug Fixes
+
+* branch name ([6b6bae7](https://github.com/ambianic/ambianic-rpi-image/commit/6b6bae79b9cbb24d6933d2b2ccfa1d3d100d1d8f))
+
+
+### Features
+
+* add docker step ([32a6e3e](https://github.com/ambianic/ambianic-rpi-image/commit/32a6e3eb961aade530c7fa1772b51a3caed7a21b))
+* docker files install script [skip ci] ([3849496](https://github.com/ambianic/ambianic-rpi-image/commit/3849496d65c3bf6c16ff08fa67115548b7bb0e99))
+
 ## [1.0.3](https://github.com/ambianic/ambianic-rpi-image/compare/v1.0.2...v1.0.3) (2020-11-14)
 
 
