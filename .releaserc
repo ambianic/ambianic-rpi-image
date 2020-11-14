@@ -22,7 +22,7 @@
           "@semantic-release/github", 
           {
             "assets": [
-              {"path": ""CHANGELOG.md", "label": "Change log"},
+              {"path": "CHANGELOG.md", "label": "Change log"},
 #              {"path": "image_ambianic_edge-rpi.zip", "label": "Ambianic Edge binary image for Raspberry Pi SD Card"},
             ]
           }
