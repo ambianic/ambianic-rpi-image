@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.0.3](https://github.com/ambianic/ambianic-rpi-image/compare/v1.0.2...v1.0.3) (2020-11-14)
+
+
+### Bug Fixes
+
+* image path ([4fda914](https://github.com/ambianic/ambianic-rpi-image/commit/4fda914054a50eb8dba2a9a0999ed98380aaf262))
+
 ## [1.0.2](https://github.com/ambianic/ambianic-rpi-image/compare/v1.0.1...v1.0.2) (2020-11-14)
 
 
