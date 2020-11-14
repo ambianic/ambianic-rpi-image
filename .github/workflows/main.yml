@@ -98,7 +98,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: deploy
-          path: ./ambianic-rpi-image/
+#          path: ./ambianic-rpi-image/
       - name: List checkout and deployment artifacts
         run: |
           pwd
