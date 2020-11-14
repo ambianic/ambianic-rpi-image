@@ -21,3 +21,4 @@ echo "Installing in $INSTALLDIR"
 git clone -b $BRANCH https://github.com/ambianic/ambianic-quickstart.git $TMPDIR/ambianic
 sudo mv $TMPDIR/ambianic $INSTALLDIR
 sh $INSTALLDIR/scripts/setup.sh
+
