@@ -6,8 +6,10 @@
 
 # Switch to the Raspberry OS image space and run the following script in it
 on_chroot << EOF
-
+# set bash flags: e - fail on unset vars, x - verbose, u - fail quick 
+set -exu 
 INSTALLDIR=/opt/ambianic
+mkdir -p $INSTALLDIR
 BRANCH=master
 TMPDIR=$(dirname $(mktemp tmp.XXXXXXXXXX -ut))
 
@@ -21,6 +23,7 @@ echo "Installing Ambianic.ai in $INSTALLDIR"
 
 # clean install
 echo "Installing in $INSTALLDIR"
+mkdir -p $TMPDIR/ambianic
 git clone -b $BRANCH https://github.com/ambianic/ambianic-quickstart.git $TMPDIR/ambianic
 sudo mv $TMPDIR/ambianic $INSTALLDIR
 sh $INSTALLDIR/scripts/setup.sh
