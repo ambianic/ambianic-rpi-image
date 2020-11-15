@@ -4,6 +4,9 @@
 # Install docker engine and ambianic edge images
 #
 
+# Switch to the Raspberry OS image space and run the following script in it
+on_chroot << EOF
+
 INSTALLDIR=/opt/ambianic
 BRANCH=master
 TMPDIR=$(dirname $(mktemp tmp.XXXXXXXXXX -ut))
@@ -22,3 +25,4 @@ git clone -b $BRANCH https://github.com/ambianic/ambianic-quickstart.git $TMPDIR
 sudo mv $TMPDIR/ambianic $INSTALLDIR
 sh $INSTALLDIR/scripts/setup.sh
 
+EOF
