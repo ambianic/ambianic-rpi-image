@@ -8,7 +8,8 @@
 on_chroot << EOF
 # set bash flags: e - fail on unset vars, x - verbose, u - fail quick 
 set -exu 
-INSTALLDIR=/opt/ambianic
+export INSTALLDIR=/opt/ambianic
+echo $INSTALLDIR
 mkdir -p $INSTALLDIR
 BRANCH=master
 TMPDIR=$(dirname $(mktemp tmp.XXXXXXXXXX -ut))
