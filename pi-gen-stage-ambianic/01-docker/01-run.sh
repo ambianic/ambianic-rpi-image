@@ -26,3 +26,4 @@ sudo mv $TMPDIR/ambianic $INSTALLDIR
 sh $INSTALLDIR/scripts/setup.sh
 
 EOF
+
