@@ -12,7 +12,7 @@ INSTALLDIR="/opt/ambianic"
 echo "\$INSTALLDIR"
 mkdir -p "\$INSTALLDIR"
 BRANCH=master
-TMPDIR="\$(dirname \$(mktemp tmp.XXXXXXXXXX -ut))"
+# TMPDIR="\$(dirname \$(mktemp tmp.XXXXXXXXXX -ut))"
 
 sudo true
 
@@ -24,9 +24,10 @@ echo "Installing Ambianic.ai in \$INSTALLDIR"
 
 # clean install
 echo "Installing in \$INSTALLDIR"
-mkdir -p "\$TMPDIR/ambianic"
-git clone -b "\$BRANCH" "https://github.com/ambianic/ambianic-quickstart.git" "\$TMPDIR/ambianic"
-sudo mv "\$TMPDIR/ambianic" "\$INSTALLDIR"
+# mkdir -p "\$TMPDIR/ambianic"
+git clone -b "\$BRANCH" "https://github.com/ambianic/ambianic-quickstart.git" "\$INSTALLDIR"
+# git clone -b "\$BRANCH" "https://github.com/ambianic/ambianic-quickstart.git" "\$TMPDIR/ambianic"
+# sudo mv "\$TMPDIR/ambianic/*" "\$INSTALLDIR"
 sh "\$INSTALLDIR/scripts/setup.sh"
 
 EOF
