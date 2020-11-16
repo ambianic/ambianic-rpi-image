@@ -13,6 +13,11 @@ mount -o bind /proc "${ROOTFS_DIR}/proc"
 # Switch to the Raspberry OS image space and run the following script in it
 on_chroot << EOF
 # set bash flags: e - fail on unset vars, x - verbose, u - fail quick 
+echo "Executing in chroot space: "${ROOTFS_DIR}"
+
+echo "CPU Info: /proc/cpuinfo"
+cat /proc/cpuinfo
+
 set -exu 
 INSTALLDIR="/opt/ambianic"
 echo "\$INSTALLDIR"
