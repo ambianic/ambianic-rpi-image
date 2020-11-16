@@ -8,7 +8,8 @@
 set +exu
 echo "CPU Info: /proc/cpuinfo"
 cat /proc/cpuinfo
-mount -o bind /proc "${ROOTFS_DIR}/proc"
+# make cpuinfo visible to chroot processes
+# mount -o bind /proc "${ROOTFS_DIR}/proc"
 
 # Switch to the Raspberry OS image space and run the following script in it
 on_chroot << EOF
