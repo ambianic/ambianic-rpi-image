@@ -4,6 +4,10 @@
 # Install docker engine and ambianic edge images
 #
 
+# make cpuinfo visible to docker within chroot
+cat /proc/cpuinfo
+mount -o bind /proc "${ROOTFS_DIR}/proc"
+
 # Switch to the Raspberry OS image space and run the following script in it
 on_chroot << EOF
 # set bash flags: e - fail on unset vars, x - verbose, u - fail quick 
