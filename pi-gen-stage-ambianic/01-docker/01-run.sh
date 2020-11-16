@@ -5,6 +5,8 @@
 #
 
 # make cpuinfo visible to docker within chroot
+set +exu
+echo "CPU Info: /proc/cpuinfo"
 cat /proc/cpuinfo
 mount -o bind /proc "${ROOTFS_DIR}/proc"
 
