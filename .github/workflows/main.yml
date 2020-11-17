@@ -67,7 +67,8 @@ jobs:
           pushd pi-gen
           pwd
           ls -al
-          sudo CLEAN=1 BUILD_VERSION=${{ steps.get_version.outputs.VERSION }} ./build.sh -c config
+          # sudo CLEAN=1 BUILD_VERSION=${{ steps.get_version.outputs.VERSION }} ./build.sh -c config
+          sudo CLEAN=1 BUILD_VERSION=${{ steps.get_version.outputs.VERSION }} ./build-docker.sh -c config
           popd
 
       - name: Check prepared images
