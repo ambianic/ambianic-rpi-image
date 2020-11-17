@@ -55,11 +55,11 @@ sudo systemctl enable docker
 # can't use systemctl in chroot
 # sudo systemctl start docker
 # start docker daemon
-sudo dockerd -H unix:///var/run/docker.sock
+# sudo dockerd -H unix:///var/run/docker.sock
 # Unable to run docker in github action > chroot > qemu environment 
-docker version
-docker info
-docker run hello-world
+# docker version
+# docker info
+#docker run hello-world
  
 EOF
 
