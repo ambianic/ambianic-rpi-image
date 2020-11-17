@@ -40,30 +40,26 @@ sudo cgroupfs-mount
 
 # clean install using ambianic quickstart scripts
 echo "Installing in \$INSTALLDIR"
-git clone -b "\$BRANCH" "https://github.com/ambianic/ambianic-quickstart.git" "\$INSTALLDIR"
-sh "\$INSTALLDIR/scripts/setup.sh"
+# git clone -b "\$BRANCH" "https://github.com/ambianic/ambianic-quickstart.git" "\$INSTALLDIR"
+# sh "\$INSTALLDIR/scripts/setup.sh"
 
 # Install docker
-# curl -fsSL https://get.docker.com -o get-docker.sh
-# sudo sh get-docker.sh
-# echo "\$USER"
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+echo "\$USER"
 # enable current user to run docker
-# sudo usermod -aG docker "\${USER}"
+sudo usermod -aG docker "\${USER}"
 # enable docker on boot
-# sudo systemctl enable docker
+sudo systemctl enable docker
 
 # can't use systemctl in chroot
 # sudo systemctl start docker
 # start docker daemon
-# sudo dockerd -H unix:///var/run/docker.sock
+sudo dockerd -H unix:///var/run/docker.sock
 # Unable to run docker in github action > chroot > qemu environment 
-# docker version
-# docker info
-# docker run hello-world
+docker version
+docker info
+docker run hello-world
  
-# install docker-compose
-#  sudo apt-get install -y libffi-dev libssl-dev  python3 python3-pip
-#    sudo pip3 install docker-compose
-
 EOF
 
