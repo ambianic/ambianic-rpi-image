@@ -44,7 +44,7 @@ sudo sh get-docker.sh
 # can't use systemctl in chroot
 # sudo systemctl start docker
 # start docker daemon
-sudo cgroupfs-umount
+sudo apt install cgroupfs-mount
 sudo cgroupfs-mount
 sudo dockerd -H unix:///var/run/docker.sock
 
