@@ -34,8 +34,7 @@ fi
 echo "Installing Ambianic.ai in \$INSTALLDIR"
 
 # Tweaks to enable docker to run within [github action > chroot > qemu] sandbox
-# sudo apt install cgroupfs-mount
-# 
+sudo apt install cgroupfs-mount
 sudo cgroupfs-mount
 
 
