@@ -8,7 +8,7 @@ After=docker.service
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-WorkingDirectory=/srv/docker
+WorkingDirectory=/opt/ambianic
 ExecStart=/usr/local/bin/docker-compose up -d
 ExecStop=/usr/local/bin/docker-compose down
 TimeoutStartSec=0
