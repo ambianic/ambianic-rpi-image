@@ -41,7 +41,11 @@ echo "Installing in \$INSTALLDIR"
 # Install docker
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
-sudo systemctl start docker
+# can't use systemctl in chroot
+# sudo systemctl start docker
+# start docker daemon
+sudo dockerd -H unix:///var/run/docker.sock
+
 docker version
 docker info
 docker run hello-world
