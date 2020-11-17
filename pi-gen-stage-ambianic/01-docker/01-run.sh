@@ -46,9 +46,9 @@ echo "Installing in \$INSTALLDIR"
 # Install docker
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
-echo "\$USER"
+# echo "\$USER"
 # enable current user to run docker
-sudo usermod -aG docker "\${USER}"
+# sudo usermod -aG docker "\${USER}"
 # enable docker on boot
 sudo systemctl enable docker
 
