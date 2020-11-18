@@ -24,4 +24,3 @@ echo "Installing in \$INSTALLDIR"
 git clone -b "\$BRANCH" "https://github.com/ambianic/ambianic-quickstart.git" "\$INSTALLDIR"
 sh "\$INSTALLDIR/scripts/setup.sh"
 EOF
-
