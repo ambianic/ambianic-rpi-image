@@ -1,5 +1,14 @@
 # Semantic Versioning Changelog
 
+## [1.2.2](https://github.com/ambianic/ambianic-rpi-image/compare/v1.2.1...v1.2.2) (2020-11-18)
+
+
+### Bug Fixes
+
+* FIRST_USER_NAME [skip ci] ([6769039](https://github.com/ambianic/ambianic-rpi-image/commit/6769039e12087d4f51cc7a590daaadf99807148a))
+* type [skip ci] ([0d66cc6](https://github.com/ambianic/ambianic-rpi-image/commit/0d66cc6f4d412a63129d4b83a41844f405f2e869))
+* typo [skip ci] ([9ea0383](https://github.com/ambianic/ambianic-rpi-image/commit/9ea0383bd6573d87cd9fb9932137e2316f624447))
+
 ## [1.2.1](https://github.com/ambianic/ambianic-rpi-image/compare/v1.2.0...v1.2.1) (2020-11-18)
 
 
