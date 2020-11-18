@@ -47,6 +47,9 @@ sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy
 # sudo update-alternatives --set ebtables /usr/sbin/ebtables-legacy
 sudo iptables-legacy -V
 sudo iptables -V
+sudo modprobe ip_tables
+sudo echo 'ip_tables' >> /etc/modules
+
 
 # clean install using ambianic quickstart scripts
 echo "Installing in \$INSTALLDIR"
