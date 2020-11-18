@@ -34,17 +34,24 @@ Now that you have flashed your SD card, you can insert it into your Raspberry Pi
 
 ### WiFi Setup
 
+![wifi-connect-setup](https://user-images.githubusercontent.com/3979615/75397237-7e525b80-594a-11ea-9be0-4f064b6a4178.png)
+
 Follow these steps to connect your device to WiFi:
 
 1. Power on your device without an Ethernet cable attached.
 2. Wait 1-2 minutes
 3. Use your mobile phone to scan for new WiFi networks
-4. Connect to the hotspot named **Ambianic Edge WiFi Setup**
+4. Connect to the hotspot named **Ambianic Edge WiFi Setup**. 
 5. Wait a few moments until the captive portal opens, this portal will allow you to connect the Raspberry Pi to your local WiFi network.
 
 If you enter your WiFi credentials incorrectly the **Ambianic Edge WiFi Setup** hotspot will reappear allowing you to try again.
 
-![wifi-connect-setup](https://user-images.githubusercontent.com/3979615/75397237-7e525b80-594a-11ea-9be0-4f064b6a4178.png)
+You should see screens similar to the ones below.
+
+<p align="left">
+    <img src="https://user-images.githubusercontent.com/2234901/99506621-f1bc5300-2947-11eb-89eb-952e8e582d3a.png" height="400">
+    <img src="https://user-images.githubusercontent.com/2234901/99506633-f41ead00-2947-11eb-9bba-a61f2b2724cf.png" height="400">
+</p>
 
 
 
