@@ -53,6 +53,11 @@ You should see screens similar to the ones below.
     <img src="https://user-images.githubusercontent.com/2234901/99506633-f41ead00-2947-11eb-9bba-a61f2b2724cf.png" height="400">
 </p>
 
+### Ambianic UI connection
+
+Once the WiFi connection is established, the Raspberry Pi will pull the latest Ambianic Edge binaries. This may take 30-60 minutes based on your internet connection speed. By default the device is configured to use a Raspberry Pi Camera as input source and report person detection events.
+
+After the update process is completed, you can proceed to pair the edge device with your [Ambianic UI](https://ui.ambianic.ai) app. The detailed steps to pair Ambianic UI to Ambianic Edge are [described here](https://docs.ambianic.ai/users/quickstart/#pairing-ambanic-ui-with-ambianic-edge).
 
 
 # Other notes
@@ -67,15 +72,16 @@ The targeted lifespan of an Ambianic Edge image is 4-5 years. Once an Ambianic E
 
 # Project Status
 
-Just getting started.
+An early stage Alpha version is now avaiable for testing.
 
 Roadmap:
 - [x] Create [pi-gen](https://github.com/RPi-Distro/pi-gen) script for RPI OS Lite image
 - [x] Add custom pi-gen stage with [Wifi Connect](https://github.com/balena-io/wifi-connect#installation) install
 - [x] Add custom pi-gen stage with Docker & Docker Compose install
-- [ ] Add custom pi-gen stage with [watchtower](https://github.com/containrrr/watchtower) docker image install
-- [ ] Add custom pi-gen stage with [ambianic-edge](https://docs.ambianic.ai/users/quickstart/) docker image install
-- [ ] Push rpi image release on github
+- [x] Push rpi image release on github
+- [x] Document image install process on a new rpi system
+- [ ] Install [watchtower](https://github.com/containrrr/watchtower) docker image install
+- [ ] Install [ambianic-edge](https://docs.ambianic.ai/users/quickstart/) docker image install
+- [ ] Update Quickstart to include rpi fast tack section.
 - [ ] Schedule annual rpi image release automation
-- [ ] Document image install process on a new rpi system
  
