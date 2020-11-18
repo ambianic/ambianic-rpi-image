@@ -1,5 +1,27 @@
 # Semantic Versioning Changelog
 
+## [1.2.1](https://github.com/ambianic/ambianic-rpi-image/compare/v1.2.0...v1.2.1) (2020-11-18)
+
+
+### Bug Fixes
+
+* ambianic config [skip ci] ([add2772](https://github.com/ambianic/ambianic-rpi-image/commit/add277208b0fb74bcbc27646d356a5bad0c12735))
+* build without docker sandbox ([5a024a7](https://github.com/ambianic/ambianic-rpi-image/commit/5a024a78c62a9830021dc6a1b885b6d363cd8149))
+* config [skip ci] ([f62411e](https://github.com/ambianic/ambianic-rpi-image/commit/f62411e19ed1b521dcfc05a336e1f26f2fd50d88))
+* docker install [skip ci] ([efa9f36](https://github.com/ambianic/ambianic-rpi-image/commit/efa9f361c73ba459118946419a624306dd4d4823))
+* iptables compatibility ([2feb55a](https://github.com/ambianic/ambianic-rpi-image/commit/2feb55a3490468117da41993510313e79bf3af7d))
+* iptables compatibility ([c5424f2](https://github.com/ambianic/ambianic-rpi-image/commit/c5424f2c09040b05680708c58392aaca4da31253))
+* iptables compatibility ([f607c37](https://github.com/ambianic/ambianic-rpi-image/commit/f607c377719b8d6a9d381cf1d035d79e19da1eec))
+* iptables setup ([009cc7b](https://github.com/ambianic/ambianic-rpi-image/commit/009cc7b7946a8308fb60df4d6d23d817c5ace3fc))
+* move ambianic config [skip ci] ([e18f8e1](https://github.com/ambianic/ambianic-rpi-image/commit/e18f8e1a3601550cbd2247aa57fdbf641ccc9d60))
+* move to quickstart [skip ci] ([a1ec69b](https://github.com/ambianic/ambianic-rpi-image/commit/a1ec69b805aad41b64d4da2bfbb5a54447f8b003))
+* move to quickstart [skip ci] ([29f1a1f](https://github.com/ambianic/ambianic-rpi-image/commit/29f1a1fb32bfeff3bec8d528742c542960a68de5))
+* move to quickstart [skip ci] ([a91a0d2](https://github.com/ambianic/ambianic-rpi-image/commit/a91a0d2d5847e4bda2f2ce0150980a999431e140))
+* new quickstart branch ([6b75b53](https://github.com/ambianic/ambianic-rpi-image/commit/6b75b537b34cbc1169af3267d714569622ccb903))
+* optimize [skip ci] ([a321053](https://github.com/ambianic/ambianic-rpi-image/commit/a321053c9254a2fcf1e09420f5feb4f8b62665af))
+* optimize install [skip ci] ([9eb71f8](https://github.com/ambianic/ambianic-rpi-image/commit/9eb71f81fb3d934e508559033efda4316ed43ccd))
+* try docker run in chroot ([b7353cc](https://github.com/ambianic/ambianic-rpi-image/commit/b7353cc89a46ca6030059901f61d373e7bec462b))
+
 # [1.2.0](https://github.com/ambianic/ambianic-rpi-image/compare/v1.1.0...v1.2.0) (2020-11-17)
 
 
