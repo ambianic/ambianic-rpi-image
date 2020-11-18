@@ -59,6 +59,21 @@ Once the WiFi connection is established, the Raspberry Pi will pull the latest A
 
 After the update process is completed, you can proceed to pair the edge device with your [Ambianic UI](https://ui.ambianic.ai) app. The detailed steps to pair Ambianic UI to Ambianic Edge are [described here](https://docs.ambianic.ai/users/quickstart/#pairing-ambanic-ui-with-ambianic-edge).
 
+### Developing and Debugging
+
+If you are looking to develop and debug Ambianic Edge code on Raspberry Pi, you can login to the newly booted device from this image via ssh. On your WiFi network, the device will show up with a host name of ambianic-edge. On most networks you should be able to
+
+```ping ambianic-edge.lan```
+
+If you have multiple Ambianic Edge devices running on the same local network, you should use their unique IP address to connect to each. After you login via ssh, you can change the host names to something unique: ambianic-edge1, ambianic-edge2, etc.
+
+You can login to a device via ssh with the `ambianic-edge` user name and an *initial and temporary* password `ChangeMeOnFirstLogin`.
+
+`ssh ambianic-edge@ambianic-edge.lan`
+
+Notice that you will use `ambianic-edge` as an user name instead of `pi`.
+
+You will find Ambianic Edge binaries and data files under `/opt/ambianic` and config files under `/etc/ambianic`.
 
 # Other notes
 
