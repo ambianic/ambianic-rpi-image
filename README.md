@@ -55,7 +55,7 @@ You should see screens similar to the ones below.
 
 ### Ambianic UI connection
 
-Once the WiFi connection is established, the Raspberry Pi will pull the latest Ambianic Edge binaries. This may take 30-60 minutes based on your internet connection speed. By default the device is configured to use a Raspberry Pi Camera as input source and report person detection events.
+Once the WiFi connection is established, the Raspberry Pi will pull the latest Ambianic Edge binaries. This may take 5-10 minutes based on your internet connection speed. By default the device is configured to use a Raspberry Pi Camera as input source and report person detection events.
 
 After the update process is completed, you can proceed to pair the edge device with your [Ambianic UI](https://ui.ambianic.ai) app. The detailed steps to pair Ambianic UI to Ambianic Edge are [described here](https://docs.ambianic.ai/users/quickstart/#pairing-ambanic-ui-with-ambianic-edge).
 
