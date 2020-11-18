@@ -10,6 +10,10 @@ on_chroot << EOF
 set -exu
 
 echo "Executing in chroot space: ${ROOTFS_DIR}"
+
+# set the user name that will have access priviledge to docker
+FIRST_USER_NAME="${FIRST_USER_NAME}"
+
 INSTALLDIR="/opt/ambianic"
 echo "\$INSTALLDIR"
 mkdir -p "\$INSTALLDIR"
