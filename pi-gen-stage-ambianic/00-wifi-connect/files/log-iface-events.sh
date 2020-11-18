@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #
-# Abmianic Edge Raspberry OS Image - WiFi Connect
+# Ambianic Edge Raspberry OS Image - WiFi Connect
 # This script stops the WiFi Connect Hotspot service when eth0 comes up
 #
 # (This script is a fork of Homebridge Raspbian Image - WiFi Connect)
