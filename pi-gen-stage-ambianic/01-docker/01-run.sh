@@ -34,9 +34,16 @@ fi
 echo "Installing Ambianic.ai in \$INSTALLDIR"
 
 # Tweaks to enable docker to run within [github action > chroot > qemu] sandbox
+# cgroups fix for docker
 sudo apt install cgroupfs-mount
 sudo cgroupfs-mount
-
+# iptables fix for docker
+sudo iptables -V
+sudo iptables-legacy -V
+sudo update-alternatives --set iptables /usr/sbin/iptables-legacy
+sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy
+sudo update-alternatives --set arptables /usr/sbin/arptables-legacy
+sudo update-alternatives --set ebtables /usr/sbin/ebtables-legacy
 
 # clean install using ambianic quickstart scripts
 echo "Installing in \$INSTALLDIR"
