@@ -29,4 +29,3 @@ git clone -b "\$BRANCH" "https://github.com/ambianic/ambianic-quickstart.git" "\
 sh "\$INSTALLDIR/scripts/setup.sh"
 EOF
 
-
