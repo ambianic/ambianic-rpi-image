@@ -7,9 +7,11 @@
 This project provides a binary image for Raspberry Pi with [Ambianic Edge](https://github.com/ambianic/ambianic-edge) pre-installed. The released image files are ready to be flashed on to an SD card and plugged into an rpi. When the raspberry pi boots for the first time with the new image on its SD Card, it runs a WiFi captive portal that allows the user to connect to it and setup WiFi access for the rpi. Once the rpi connects to the internet it is ready to be accessed and managed by the Ambianic UI PWA.
 
 * Tested on Raspberry Pi 4 B
-* Built on Raspberry Os Lite (no desktop) via [pi-gen](https://github.com/RPi-Distro/pi-gen). 
+* Built on Raspberry Pi OS Lite via [pi-gen](https://github.com/RPi-Distro/pi-gen). 
 * Simple WiFi Setup via [Balena Wifi Connect](https://github.com/balena-io/wifi-connect)
 * Visual configuration and management via [Ambianic UI](https://github.com/ambianic/ambianic-ui)
+* Recommended enclosure: [Ambianic Box](https://github.com/ambianic/ambianic-box)
+
 
 This image automatically and continuously updates to the latest version of Ambianic Edge using [docker watchtower](https://github.com/containrrr/watchtower).
 
