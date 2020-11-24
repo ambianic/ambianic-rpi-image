@@ -1,0 +1,1 @@
+SUBSYSTEM=="vchiq",MODE="0666"
