@@ -36,7 +36,7 @@ mkdir -p "\$INSTALLDIR/data"
 install -d -m 0755 -o "\$FIRST_USER_NAME" "\$INSTALLDIR/data"
 
 # change ownership of all ambianic app files to ambianic user and group
-chown -R "$FIRST_USER_NAME:$FIRST_USER_NAME" $INSTALLDIR
+chown -R "$FIRST_USER_NAME:$FIRST_USER_NAME" "\$INSTALLDIR"
 
 EOF
 
