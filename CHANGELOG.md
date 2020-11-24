@@ -1,5 +1,14 @@
 # Semantic Versioning Changelog
 
+## [1.2.6](https://github.com/ambianic/ambianic-rpi-image/compare/v1.2.5...v1.2.6) (2020-11-24)
+
+
+### Bug Fixes
+
+* data dir permissions ([7d66077](https://github.com/ambianic/ambianic-rpi-image/commit/7d6607787f04fefc8fb8385cead0eb71baf07dc4))
+* make scripts executable ([3bd54cc](https://github.com/ambianic/ambianic-rpi-image/commit/3bd54cc5c2425e641ee1ed79077755b08b36b45a))
+* pull loop ([1de0554](https://github.com/ambianic/ambianic-rpi-image/commit/1de0554e4c603c0fd62833387cabd974cc76dd59))
+
 ## [1.2.5](https://github.com/ambianic/ambianic-rpi-image/compare/v1.2.4...v1.2.5) (2020-11-19)
 
 
