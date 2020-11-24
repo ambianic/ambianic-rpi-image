@@ -26,7 +26,13 @@ echo "Installing Ambianic.ai in \$INSTALLDIR"
 # clean install using ambianic quickstart scripts
 echo "Installing in \$INSTALLDIR"
 git clone -b "\$BRANCH" "https://github.com/ambianic/ambianic-quickstart.git" "\$INSTALLDIR"
-# make sure all scripts are executable
-chmod +x "\$INSTALLDIR/scripts/*.sh"
 sh "\$INSTALLDIR/scripts/setup.sh"
+
+# grant ambianic user access to data files
+# create data dir if it doesn't exist yet
+mkdir -p "\$INSTALLDIR/data"
+# set user owner and permission settings on data file
+install -d -m 0755 -o "\$FIRST_USER_NAME" "\$INSTALLDIR/data"
+
 EOF
+
