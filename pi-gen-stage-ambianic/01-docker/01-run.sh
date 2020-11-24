@@ -26,6 +26,7 @@ echo "Installing Ambianic.ai in \$INSTALLDIR"
 # clean install using ambianic quickstart scripts
 echo "Installing in \$INSTALLDIR"
 git clone -b "\$BRANCH" "https://github.com/ambianic/ambianic-quickstart.git" "\$INSTALLDIR"
+# make sure all scripts are executable
+chmod +x "\$INSTALLDIR/scripts/*.sh"
 sh "\$INSTALLDIR/scripts/setup.sh"
 EOF
-
