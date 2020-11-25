@@ -10,6 +10,6 @@ on_chroot << EOF
 set -exu
 # grant all users accesss to video group
 # See more here: https://www.losant.com/blog/how-to-access-the-raspberry-pi-camera-in-docker
-sudo install -m 644 -o "$FIRST_USER_NAME:$FIRST_USER_NAME" "files/99-camera.rules" "/etc/udev/rules.d/99-camera.rules"
+sudo install -m 644 -o "$FIRST_USER_NAME" -g "$FIRST_USER_NAME" "files/99-camera.rules" "/etc/udev/rules.d/99-camera.rules"
 EOF
 
