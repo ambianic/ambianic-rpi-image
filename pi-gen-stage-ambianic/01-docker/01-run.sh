@@ -39,7 +39,7 @@ install -d -m 0755 -o "\$FIRST_USER_NAME" "\$INSTALLDIR/data"
 chown -R "$FIRST_USER_NAME:$FIRST_USER_NAME" "\$INSTALLDIR"
 
 # make sure all scripts are executable
-chmod -R +x \$INSTALLDIR/opt/ambianic/scripts/*.sh
+chmod -R +x \$INSTALLDIR/scripts/*.sh
 
 EOF
 
