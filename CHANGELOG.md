@@ -1,5 +1,24 @@
 # Semantic Versioning Changelog
 
+# [1.3.0](https://github.com/ambianic/ambianic-rpi-image/compare/v1.2.6...v1.3.0) (2020-11-25)
+
+
+### Bug Fixes
+
+* chown ambianic user ([eae58ad](https://github.com/ambianic/ambianic-rpi-image/commit/eae58adada45b59968c426fde5baeef6fa2fea28))
+* exec context ([eabea7f](https://github.com/ambianic/ambianic-rpi-image/commit/eabea7fee5132b31a86f29bb5296b1769c54f0ab))
+* expand var ([a9f53b0](https://github.com/ambianic/ambianic-rpi-image/commit/a9f53b0a469bc7d6ada8265d2ad5e62df48315b9))
+* initial image pull and picam access ([3bed3b2](https://github.com/ambianic/ambianic-rpi-image/commit/3bed3b202d9e884172f5fc0deaa425a81b6888e0))
+* install params ([ec455fe](https://github.com/ambianic/ambianic-rpi-image/commit/ec455feb01b6f0d9d08d01fee0aecc1d60f8ca4b))
+* ownership flags ([b02cea6](https://github.com/ambianic/ambianic-rpi-image/commit/b02cea660782026d9e6a865126166e034f2aa7ba))
+* picam access for ambianic user ([ad4d006](https://github.com/ambianic/ambianic-rpi-image/commit/ad4d006c49d22cc8f0e7df0237fa4673ee519137))
+* switch to quickstart rpi-image branch ([1ba6c3d](https://github.com/ambianic/ambianic-rpi-image/commit/1ba6c3dd62bb962ece3134227ce71b5f96c73a9f))
+
+
+### Features
+
+* add picam access for ambianic user ([047b8bd](https://github.com/ambianic/ambianic-rpi-image/commit/047b8bd6520c06ff6bcafcaf946c7937939f182a))
+
 ## [1.2.6](https://github.com/ambianic/ambianic-rpi-image/compare/v1.2.5...v1.2.6) (2020-11-24)
 
 
