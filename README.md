@@ -61,6 +61,18 @@ Once the WiFi connection is established, the Raspberry Pi will pull the latest A
 
 After the update process is completed, you can proceed to pair the edge device with your [Ambianic UI](https://ui.ambianic.ai) app. The detailed steps to pair Ambianic UI to Ambianic Edge are [described here](https://docs.ambianic.ai/users/quickstart/#pairing-ambanic-ui-with-ambianic-edge).
 
+### Troubleshooting
+
+Raspberry Pi is a DYI platform and it requires some technical skills to operate properly. If you don't have any prior experience with Raspberry Pi and picam, you should take some time to learn the basics.
+
+#### Power Supply
+
+Raspberry Pi 4 requires a specific 5V 3A power supply, which is different from previous versions of the pi. If you use the wrong type, you may hurt your pi device.
+
+#### Picam
+
+If your picamera is not properly connected to the Raspberry Pi you will have trouble using it with Ambianic. [Here is a great introductory tutorial on connecting and testing picam](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera).
+
 ### Developing and Debugging
 
 If you are looking to develop and debug Ambianic Edge code on Raspberry Pi, you can login to the newly booted device from this image via ssh. On your WiFi network, the device will show up with a host name of ambianic-edge. On most networks you should be able to
