@@ -1,5 +1,13 @@
 # Semantic Versioning Changelog
 
+## [1.3.1](https://github.com/ambianic/ambianic-rpi-image/compare/v1.3.0...v1.3.1) (2020-11-25)
+
+
+### Bug Fixes
+
+* make all scripts executable ([e6492c8](https://github.com/ambianic/ambianic-rpi-image/commit/e6492c81a9444a939f1c4b3f72b2385eea06d24a))
+* scripts path ([131ab46](https://github.com/ambianic/ambianic-rpi-image/commit/131ab468e84cb638c356fd3a050e1c9db0ba822f))
+
 # [1.3.0](https://github.com/ambianic/ambianic-rpi-image/compare/v1.2.6...v1.3.0) (2020-11-25)
 
 
