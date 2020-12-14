@@ -109,8 +109,8 @@ Roadmap:
 - [x] Add custom pi-gen stage with Docker & Docker Compose install
 - [x] Push rpi image release on github
 - [x] Document image install process on a new rpi system
-- [ ] Install [watchtower](https://github.com/containrrr/watchtower) docker image install
-- [ ] Install [ambianic-edge](https://docs.ambianic.ai/users/quickstart/) docker image install
-- [ ] Update Quickstart to include rpi fast tack section.
+- [x] Install [watchtower](https://github.com/containrrr/watchtower) docker image install
+- [x] Install [ambianic-edge](https://docs.ambianic.ai/users/quickstart/) docker image install
+- [x] Update Quickstart to include rpi fast tack section.
 - [ ] Schedule annual rpi image release automation
  
