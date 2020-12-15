@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.4.1](https://github.com/ambianic/ambianic-rpi-image/compare/v1.4.0...v1.4.1) (2020-12-15)
+
+
+### Bug Fixes
+
+* fall detection config ([d505d0f](https://github.com/ambianic/ambianic-rpi-image/commit/d505d0f15b06203be91e588a2199080e0a4a88af))
+
 # [1.4.0](https://github.com/ambianic/ambianic-rpi-image/compare/v1.3.1...v1.4.0) (2020-12-14)
 
 
