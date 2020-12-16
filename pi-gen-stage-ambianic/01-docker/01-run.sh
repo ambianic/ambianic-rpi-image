@@ -17,8 +17,8 @@ FIRST_USER_NAME="${FIRST_USER_NAME}"
 INSTALLDIR="/opt/ambianic"
 echo "\$INSTALLDIR"
 mkdir -p "\$INSTALLDIR"
-# BRANCH=master
-BRANCH=rpi-image
+BRANCH=master
+# BRANCH=rpi-image
 sudo true
 if ! type "git" > /dev/null; then
     sudo apt update -q && sudo apt install git -y
