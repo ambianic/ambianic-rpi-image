@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.4.2](https://github.com/ambianic/ambianic-rpi-image/compare/v1.4.1...v1.4.2) (2020-12-16)
+
+
+### Bug Fixes
+
+* switch to quickstart master branch ([c2092f2](https://github.com/ambianic/ambianic-rpi-image/commit/c2092f23b3e200b2a81e4da5f4954fffedeafc6b))
+
 ## [1.4.1](https://github.com/ambianic/ambianic-rpi-image/compare/v1.4.0...v1.4.1) (2020-12-15)
 
 
