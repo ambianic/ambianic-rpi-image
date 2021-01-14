@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.4.3](https://github.com/ambianic/ambianic-rpi-image/compare/v1.4.2...v1.4.3) (2021-01-14)
+
+
+### Bug Fixes
+
+* pickup new default config ([e8bacf9](https://github.com/ambianic/ambianic-rpi-image/commit/e8bacf90444e1f734904b8c3caaba14ce2c6b438))
+
 ## [1.4.2](https://github.com/ambianic/ambianic-rpi-image/compare/v1.4.1...v1.4.2) (2020-12-16)
 
 
