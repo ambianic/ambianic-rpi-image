@@ -113,4 +113,3 @@ Roadmap:
 - [x] Install [ambianic-edge](https://docs.ambianic.ai/users/quickstart/) docker image install
 - [x] Update Quickstart to include rpi fast tack section.
 - [ ] Schedule annual rpi image release automation
-
