@@ -30,9 +30,7 @@ jobs:
         run: |
           sudo dpkg --add-architecture i386
           sudo apt-get update --fix-missing
-          # sudo apt-get install coreutils quilt parted qemu-user-static debootstrap zerofree zip
-          # sudo apt-get install dosfstools bsdtar libcap2-bin grep rsync xz-utils file git curl bc
-          sudo apt-get install -y coreutils quilt parted debootstrap zerofree zip dosfstools bsdtar libcap2-bin grep rsync xz-utils file git curl bc jq
+          sudo apt-get install -y coreutils quilt parted debootstrap zerofree zip dosfstools libarchive-tools libcap2-bin grep rsync xz-utils file git curl bc jq
           sudo apt-get install -y qemu-user-static:i386
       # Checkout the latest pi-gen repo code
       - name: Checkout the latest pi-gen repo code
