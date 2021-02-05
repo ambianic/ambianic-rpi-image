@@ -1,5 +1,15 @@
 # Semantic Versioning Changelog
 
+## [1.4.4](https://github.com/ambianic/ambianic-rpi-image/compare/v1.4.3...v1.4.4) (2021-02-05)
+
+
+### Bug Fixes
+
+* pick up new default config.yaml ([2d07ba0](https://github.com/ambianic/ambianic-rpi-image/commit/2d07ba0e3ebbea27e5ebbd0d6f46a5b6391c4cff))
+* pickup new config with fall detection only ([286bc33](https://github.com/ambianic/ambianic-rpi-image/commit/286bc336876d6470d7d4561da1614ee8ffc5b103))
+* qemu package name ([ff92ff4](https://github.com/ambianic/ambianic-rpi-image/commit/ff92ff4520604d762e1c5d58253eac57e5e6696f))
+* replace bsdtar with libarchive-tools ([fb55e68](https://github.com/ambianic/ambianic-rpi-image/commit/fb55e68b3214dd26c4c3f9a3d19325c88e9690da))
+
 ## [1.4.3](https://github.com/ambianic/ambianic-rpi-image/compare/v1.4.2...v1.4.3) (2021-01-14)
 
 
