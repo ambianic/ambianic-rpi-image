@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.4.5](https://github.com/ambianic/ambianic-rpi-image/compare/v1.4.4...v1.4.5) (2021-03-02)
+
+
+### Bug Fixes
+
+* add qemu required libs ([3776f89](https://github.com/ambianic/ambianic-rpi-image/commit/3776f899caee8e725b55969748a8159024326414))
+
 ## [1.4.4](https://github.com/ambianic/ambianic-rpi-image/compare/v1.4.3...v1.4.4) (2021-02-05)
 
 
