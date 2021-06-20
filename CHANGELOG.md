@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.4.6](https://github.com/ambianic/ambianic-rpi-image/compare/v1.4.5...v1.4.6) (2021-06-20)
+
+
+### Bug Fixes
+
+* enable person detection by default ([df68c29](https://github.com/ambianic/ambianic-rpi-image/commit/df68c29712bdca29a79de53fa5535b5fe5bd48e3))
+
 ## [1.4.5](https://github.com/ambianic/ambianic-rpi-image/compare/v1.4.4...v1.4.5) (2021-03-02)
 
 
