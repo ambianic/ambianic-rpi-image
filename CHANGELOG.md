@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.4.7](https://github.com/ambianic/ambianic-rpi-image/compare/v1.4.6...v1.4.7) (2021-08-20)
+
+
+### Bug Fixes
+
+* watchtower config fix in docker-compose.yaml ([c4efd41](https://github.com/ambianic/ambianic-rpi-image/commit/c4efd412cc68dc004e3defe9e65e1231ea0bb741))
+
 ## [1.4.6](https://github.com/ambianic/ambianic-rpi-image/compare/v1.4.5...v1.4.6) (2021-06-20)
 
 
