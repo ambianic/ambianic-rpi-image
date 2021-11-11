@@ -1,5 +1,14 @@
 # Semantic Versioning Changelog
 
+## [1.4.8](https://github.com/ambianic/ambianic-rpi-image/compare/v1.4.7...v1.4.8) (2021-11-11)
+
+
+### Bug Fixes
+
+* build from latest stable pi-gen buster tag ([ff95fe1](https://github.com/ambianic/ambianic-rpi-image/commit/ff95fe16847e75025399b6a87ea8f4cd22c07c16))
+* revert qcow2 to default setting ([ac0553b](https://github.com/ambianic/ambianic-rpi-image/commit/ac0553b84f9fed7acc914ab31856d6efa75e8551))
+* upstream breaking change ([2b8a2bc](https://github.com/ambianic/ambianic-rpi-image/commit/2b8a2bc75d4d94fe256a89e13cfd920623a8c516))
+
 ## [1.4.7](https://github.com/ambianic/ambianic-rpi-image/compare/v1.4.6...v1.4.7) (2021-08-20)
 
 
