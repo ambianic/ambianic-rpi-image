@@ -64,6 +64,8 @@ jobs:
           ls -al          
           pushd pi-gen
           pwd
+          # Checkout a known stable pi-gen tag
+          git checkout tags/2021-05-07-raspbian-buster
           ls -al
           # sudo CLEAN=1 BUILD_VERSION=${{ steps.get_version.outputs.VERSION }} ./build.sh -c config
           sudo CLEAN=1 BUILD_VERSION=${{ steps.get_version.outputs.VERSION }} ./build.sh -c config
