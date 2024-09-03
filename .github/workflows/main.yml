@@ -96,7 +96,7 @@ jobs:
         # checkout repo to access custom semantic release scripts
         uses: actions/checkout@v2
       - name: Download deploy artifacts from build job
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: deploy
 #          path: ./ambianic-rpi-image/
